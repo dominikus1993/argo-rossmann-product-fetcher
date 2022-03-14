@@ -3,7 +3,7 @@ using ProductFetcher.Core.Services;
 
 namespace ProductFetcher.Core.UseCases;
 
-public sealed class FetchRossmannProductsUseCase 
+public sealed class FetchRossmannProductsUseCase
 {
     private readonly IRossmannProductsService _productsService;
 
@@ -14,7 +14,6 @@ public sealed class FetchRossmannProductsUseCase
 
     public async Task<List<RossmannProductDto>> Execute()
     {
-        var result = await _productsService.GetProductsInPromotion();
-
+        return await _productsService.GetProductsInPromotion().ToListAsync();
     }
 }
