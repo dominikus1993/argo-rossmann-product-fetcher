@@ -1,0 +1,7 @@
+STORAGE: NONE
+RESTRICTION: == net6.0
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Microsoft.Bcl.AsyncInterfaces (6.0)
+    System.Linq.Async (6.0.1)
+      Microsoft.Bcl.AsyncInterfaces (>= 6.0)
