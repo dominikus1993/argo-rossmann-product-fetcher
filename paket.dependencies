@@ -14,3 +14,9 @@ nuget Refit.HttpClientFactory
 nuget Mapster
 nuget Cocona
 nuget Microsoft.Extensions.Configuration
+
+
+nuget Microsoft.NET.Test.Sdk
+nuget xunit
+nuget xunit.runner.visualstudio
+nuget coverlet.collector
