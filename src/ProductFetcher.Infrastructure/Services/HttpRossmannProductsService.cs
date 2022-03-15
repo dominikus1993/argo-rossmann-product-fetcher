@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 using Mapster;
 
 using ProductFetcher.Core.Dto;
@@ -16,7 +18,7 @@ internal class HttpRossmannProductsService : IRossmannProductsService
         _productsApi = productsApi;
     }
 
-    public async IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion(CancellationToken cancellationToken = default)
+    public async IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion([EnumeratorCancellation]CancellationToken cancellationToken = default)
     {
         for (int page = 1; page < 3; page++)
         {
