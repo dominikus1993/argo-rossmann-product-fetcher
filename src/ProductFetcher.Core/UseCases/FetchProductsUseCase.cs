@@ -14,6 +14,7 @@ public sealed class FetchRossmannProductsUseCase
 
     public async Task<List<RossmannProductDto>> Execute()
     {
+
         return await _productsService.GetProductsInPromotion().ToListAsync();
     }
 }
