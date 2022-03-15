@@ -23,12 +23,7 @@ var app = builder.Build();
 
 app.UseFilter(new LoggingFilter(app.Services.GetRequiredService<ILogger<LoggingFilter>>()));
 app.AddCommand(async (FetchRossmannProductsUseCase useCase) => {
-    var products = await useCase.Execute().ConfigureAwait(false);
-    Console.WriteLine($"{products.Count} products found");
-    foreach (var p in products)
-    {
-        Console.WriteLine($"{p.Id} {p.Name} {p.Price}");
-    }
+     await useCase.Execute().ConfigureAwait(false);
 });
 
 await app.RunAsync().ConfigureAwait(false);

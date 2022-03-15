@@ -3,8 +3,10 @@ using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using ProductFetcher.Core.Repositories;
 using ProductFetcher.Core.Services;
 using ProductFetcher.Infrastructure.Api;
+using ProductFetcher.Infrastructure.Repositories;
 using ProductFetcher.Infrastructure.Services;
 
 using Refit;
@@ -31,6 +33,9 @@ public static class IocExtensions
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
             });
         services.AddTransient<IRossmannProductsService, HttpRossmannProductsService>();
+        services.AddSingleton<JsonSerializerOptions>(options);
+        services.AddSingleton(new FileProductsWriterConfig(configuration["Sink:Path"], configuration["Sink:FileName"]));
+        services.AddTransient<IProductsWriter, FileProductsWriter>();
         return services;
     }
 }

@@ -1,4 +1,5 @@
 using ProductFetcher.Core.Dto;
+using ProductFetcher.Core.Repositories;
 using ProductFetcher.Core.Services;
 
 namespace ProductFetcher.Core.UseCases;
@@ -6,14 +7,17 @@ namespace ProductFetcher.Core.UseCases;
 public sealed class FetchRossmannProductsUseCase
 {
     private readonly IRossmannProductsService _productsService;
+    private readonly IProductsWriter _productsWriter;
 
-    public FetchRossmannProductsUseCase(IRossmannProductsService productsService)
+    public FetchRossmannProductsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)
     {
         _productsService = productsService;
+        _productsWriter = productsWriter;
     }
 
-    public async Task<List<RossmannProductDto>> Execute()
+    public async Task Execute()
     {
-        return await _productsService.GetProductsInPromotion().ToListAsync();
+        var result = await _productsService.GetProductsInPromotion().ToListAsync();
+        await _productsWriter.WriteProducts(result);
     }
 }
