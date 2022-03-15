@@ -1,6 +1,11 @@
-namespace ProductFetcher.Core.Dto;
+namespace ProductFetcher.Infrastructure.Dto;
 
-public class RossmannProductDto
+internal class RossmannApiResponse<T>
+{
+    public T? Data { get; set; }
+}
+
+internal class ApiProductDto
 {
     public int Id { get; set; }
     public string? NavigateUrl { get; set; }
@@ -21,5 +26,4 @@ public class RossmannProductDto
     public double Depth { get; set; }
     public double Weight { get; set; }
     public string? Category { get; set; }
-    
 }

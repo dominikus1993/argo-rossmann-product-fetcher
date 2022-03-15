@@ -5,3 +5,4 @@ Microsoft.Extensions.Http.Polly
 AspNetCore.HealthChecks.Uris
 Refit
 Refit.HttpClientFactory
+Mapster
