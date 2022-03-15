@@ -4,12 +4,12 @@ using ProductFetcher.Core.Services;
 
 namespace ProductFetcher.Core.UseCases;
 
-public sealed class FetchRossmannProductsUseCase
+public sealed class NotifyCustomerAboutPromotionsUseCase
 {
     private readonly IRossmannProductsService _productsService;
     private readonly IProductsWriter _productsWriter;
 
-    public FetchRossmannProductsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)
+    public NotifyCustomerAboutPromotionsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)
     {
         _productsService = productsService;
         _productsWriter = productsWriter;

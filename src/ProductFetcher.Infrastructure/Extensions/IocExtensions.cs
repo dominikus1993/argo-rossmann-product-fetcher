@@ -34,7 +34,7 @@ public static class IocExtensions
             });
         services.AddTransient<IRossmannProductsService, HttpRossmannProductsService>();
         services.AddSingleton<JsonSerializerOptions>(options);
-        services.AddSingleton(new FileProductsWriterConfig(configuration["Sink:Path"], configuration["Sink:FileName"]));
+        services.AddSingleton(new FileProductsWriterConfig(configuration["WriteSink:Path"], configuration["WriteSink:FileName"]));
         services.AddTransient<IProductsWriter, FileProductsWriter>();
         return services;
     }
