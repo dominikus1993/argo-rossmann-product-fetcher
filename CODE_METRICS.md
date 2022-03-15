@@ -5,56 +5,94 @@
 
 This file is dynamically maintained by a bot, *please do not* edit this by hand. It represents various [code metrics](https://aka.ms/dotnet/code-metrics), such as cyclomatic complexity, maintainability index, and so on.
 
+<div id='productfetcher-fetchcli'></div>
+
+## ProductFetcher.FetchCli :heavy_check_mark:
+
+The *ProductFetcher.FetchCli.csproj* project file contains:
+
+- 1 namespaces.
+- 2 named types.
+- 87 total lines of source code.
+- Approximately 34 lines of executable code.
+- The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+<details>
+<summary>
+  <strong id="global+namespace">
+    &lt;global namespace&gt; :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+The `<global namespace>` namespace contains 2 named types.
+
+- 2 named types.
+- 87 total lines of source code.
+- Approximately 34 lines of executable code.
+- The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+<details>
+<summary>
+  <strong id="program$">
+    &lt;Program&gt;$ :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `<Program>$` contains 1 members.
+- 61 total lines of source code.
+- Approximately 28 lines of executable code.
+- The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L1' title='<top-level-statements-entry-point>'>1</a> | 60 | 2 :heavy_check_mark: | 0 | 5 | 61 / 14 |
+
+<a href="#global+namespace">:top: back to &lt;global namespace&gt;</a>
+
+</details>
+
+<details>
+<summary>
+  <strong id="loggingfilter">
+    LoggingFilter :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `LoggingFilter` contains 3 members.
+- 26 total lines of source code.
+- Approximately 6 lines of executable code.
+- The highest cyclomatic complexity is 1 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L38' title='ILogger LoggingFilter._logger'>38</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L40' title='LoggingFilter.LoggingFilter(ILogger<LoggingFilter> logger)'>40</a> | 96 | 1 :heavy_check_mark: | 0 | 2 | 4 / 1 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L44' title='ValueTask<int> LoggingFilter.OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next)'>44</a> | 73 | 1 :heavy_check_mark: | 0 | 6 | 17 / 5 |
+
+<a href="#LoggingFilter-class-diagram">:link: to `LoggingFilter` class diagram</a>
+
+<a href="#global+namespace">:top: back to &lt;global namespace&gt;</a>
+
+</details>
+
+</details>
+
+<a href="#productfetcher-fetchcli">:top: back to ProductFetcher.FetchCli</a>
+
 <div id='productfetcher-core'></div>
 
 ## ProductFetcher.Core :heavy_check_mark:
 
 The *ProductFetcher.Core.csproj* project file contains:
 
-- 4 namespaces.
-- 4 named types.
-- 52 total lines of source code.
+- 3 namespaces.
+- 3 named types.
+- 47 total lines of source code.
 - Approximately 2 lines of executable code.
 - The highest cyclomatic complexity is 2 :heavy_check_mark:.
-
-<details>
-<summary>
-  <strong id="productfetcher-core">
-    ProductFetcher.Core :question:
-  </strong>
-</summary>
-<br>
-
-The `ProductFetcher.Core` namespace contains 1 named types.
-
-- 1 named types.
-- 5 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 0 :question:.
-
-<details>
-<summary>
-  <strong id="class1">
-    Class1 :question:
-  </strong>
-</summary>
-<br>
-
-- The `Class1` contains 0 members.
-- 4 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 0 :question:.
-
-| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-
-<a href="#Class1-class-diagram">:link: to `Class1` class diagram</a>
-
-<a href="#productfetcher-core">:top: back to ProductFetcher.Core</a>
-
-</details>
-
-</details>
 
 <details>
 <summary>
@@ -102,7 +140,7 @@ The `ProductFetcher.Core.Dto` namespace contains 1 named types.
 | Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L12' title='double RossmannProductDto.Price'>12</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 | Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L14' title='string? RossmannProductDto.PricePerUnit'>14</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
 | Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L9' title='string? RossmannProductDto.Unit'>9</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L18' title='string? RossmannProductDto.Vat'>18</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L18' title='int RossmannProductDto.Vat'>18</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 | Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L22' title='double RossmannProductDto.Weight'>22</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 | Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Dto/ProductDto.cs#L20' title='int RossmannProductDto.Width'>20</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 
@@ -205,10 +243,10 @@ The `ProductFetcher.Core.UseCases` namespace contains 1 named types.
 The *ProductFetcher.Infrastructure.csproj* project file contains:
 
 - 4 namespaces.
-- 5 named types.
-- 70 total lines of source code.
-- Approximately 11 lines of executable code.
-- The highest cyclomatic complexity is 6 :heavy_check_mark:.
+- 6 named types.
+- 95 total lines of source code.
+- Approximately 16 lines of executable code.
+- The highest cyclomatic complexity is 7 :heavy_check_mark:.
 
 <details>
 <summary>
@@ -240,7 +278,7 @@ The `ProductFetcher.Infrastructure.Api` namespace contains 1 named types.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Api/IProductsApi.cs#L7' title='Task<RossmannApiResponse<List<ApiProductDto>>> IProductsApi.GetProducts(int page)'>7</a> | 93 | 1 :heavy_check_mark: | 0 | 5 | 2 / 2 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Api/IProductsApi.cs#L7' title='Task<RossmannApiResponse<ApiProductData>> IProductsApi.GetProducts(int page)'>7</a> | 93 | 1 :heavy_check_mark: | 0 | 4 | 2 / 2 |
 
 <a href="#IProductsApi-class-diagram">:link: to `IProductsApi` class diagram</a>
 
@@ -258,12 +296,37 @@ The `ProductFetcher.Infrastructure.Api` namespace contains 1 named types.
 </summary>
 <br>
 
-The `ProductFetcher.Infrastructure.Dto` namespace contains 2 named types.
+The `ProductFetcher.Infrastructure.Dto` namespace contains 3 named types.
 
-- 2 named types.
-- 28 total lines of source code.
+- 3 named types.
+- 35 total lines of source code.
 - Approximately 0 lines of executable code.
 - The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+<details>
+<summary>
+  <strong id="apiproductdata">
+    ApiProductData :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `ApiProductData` contains 3 members.
+- 6 total lines of source code.
+- Approximately 0 lines of executable code.
+- The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L10' title='List<ApiProductDto>? ApiProductData.Products'>10</a> | 100 | 2 :heavy_check_mark: | 0 | 3 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L12' title='int ApiProductData.TotalCount'>12</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L11' title='int ApiProductData.TotalPages'>11</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+
+<a href="#ApiProductData-class-diagram">:link: to `ApiProductData` class diagram</a>
+
+<a href="#productfetcher-infrastructure-dto">:top: back to ProductFetcher.Infrastructure.Dto</a>
+
+</details>
 
 <details>
 <summary>
@@ -280,25 +343,25 @@ The `ProductFetcher.Infrastructure.Dto` namespace contains 2 named types.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L22' title='string? ApiProductDto.AGroupNrOld'>22</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L15' title='string? ApiProductDto.Brand'>15</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L13' title='string? ApiProductDto.Caption'>13</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L28' title='string? ApiProductDto.Category'>28</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L21' title='string? ApiProductDto.DANNumber'>21</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L26' title='double ApiProductDto.Depth'>26</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L24' title='int ApiProductDto.Height'>24</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L10' title='int ApiProductDto.Id'>10</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L18' title='decimal? ApiProductDto.LoyaltyPrice'>18</a> | 100 | 2 :heavy_check_mark: | 0 | 2 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L20' title='string? ApiProductDto.LoyaltyPricePerUnit'>20</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L12' title='string? ApiProductDto.Name'>12</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L11' title='string? ApiProductDto.NavigateUrl'>11</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L16' title='double? ApiProductDto.OldPrice'>16</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L17' title='double ApiProductDto.Price'>17</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L19' title='string? ApiProductDto.PricePerUnit'>19</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L14' title='string? ApiProductDto.Unit'>14</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L23' title='string? ApiProductDto.Vat'>23</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L27' title='double ApiProductDto.Weight'>27</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L25' title='int ApiProductDto.Width'>25</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L29' title='string? ApiProductDto.AGroupNrOld'>29</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L22' title='string? ApiProductDto.Brand'>22</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L20' title='string? ApiProductDto.Caption'>20</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L35' title='string? ApiProductDto.Category'>35</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L28' title='string? ApiProductDto.DANNumber'>28</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L33' title='double ApiProductDto.Depth'>33</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L31' title='int ApiProductDto.Height'>31</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L17' title='int ApiProductDto.Id'>17</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L25' title='decimal? ApiProductDto.LoyaltyPrice'>25</a> | 100 | 2 :heavy_check_mark: | 0 | 2 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L27' title='string? ApiProductDto.LoyaltyPricePerUnit'>27</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L19' title='string? ApiProductDto.Name'>19</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L18' title='string? ApiProductDto.NavigateUrl'>18</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L23' title='double? ApiProductDto.OldPrice'>23</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L24' title='double ApiProductDto.Price'>24</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L26' title='string? ApiProductDto.PricePerUnit'>26</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L21' title='string? ApiProductDto.Unit'>21</a> | 100 | 2 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L30' title='int ApiProductDto.Vat'>30</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L34' title='double ApiProductDto.Weight'>34</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Dto/ProductResponse.cs#L32' title='int ApiProductDto.Width'>32</a> | 100 | 2 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 
 <a href="#ApiProductDto-class-diagram">:link: to `ApiProductDto` class diagram</a>
 
@@ -333,38 +396,39 @@ The `ProductFetcher.Infrastructure.Dto` namespace contains 2 named types.
 
 <details>
 <summary>
-  <strong id="productfetcher-infrastructure">
-    ProductFetcher.Infrastructure :question:
+  <strong id="productfetcher-infrastructure-extensions">
+    ProductFetcher.Infrastructure.Extensions :heavy_check_mark:
   </strong>
 </summary>
 <br>
 
-The `ProductFetcher.Infrastructure` namespace contains 1 named types.
+The `ProductFetcher.Infrastructure.Extensions` namespace contains 1 named types.
 
 - 1 named types.
-- 5 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 0 :question:.
+- 25 total lines of source code.
+- Approximately 7 lines of executable code.
+- The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
 <summary>
-  <strong id="class1">
-    Class1 :question:
+  <strong id="iocextensions">
+    IocExtensions :heavy_check_mark:
   </strong>
 </summary>
 <br>
 
-- The `Class1` contains 0 members.
-- 4 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 0 :question:.
+- The `IocExtensions` contains 1 members.
+- 23 total lines of source code.
+- Approximately 7 lines of executable code.
+- The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Extensions/IocExtensions.cs#L16' title='IServiceCollection IocExtensions.AddInfrastructure(IServiceCollection services, IConfiguration configuration)'>16</a> | 69 | 1 :heavy_check_mark: | 0 | 7 | 20 / 7 |
 
-<a href="#Class1-class-diagram">:link: to `Class1` class diagram</a>
+<a href="#IocExtensions-class-diagram">:link: to `IocExtensions` class diagram</a>
 
-<a href="#productfetcher-infrastructure">:top: back to ProductFetcher.Infrastructure</a>
+<a href="#productfetcher-infrastructure-extensions">:top: back to ProductFetcher.Infrastructure.Extensions</a>
 
 </details>
 
@@ -381,9 +445,9 @@ The `ProductFetcher.Infrastructure` namespace contains 1 named types.
 The `ProductFetcher.Infrastructure.Services` namespace contains 1 named types.
 
 - 1 named types.
-- 29 total lines of source code.
-- Approximately 9 lines of executable code.
-- The highest cyclomatic complexity is 6 :heavy_check_mark:.
+- 27 total lines of source code.
+- Approximately 7 lines of executable code.
+- The highest cyclomatic complexity is 7 :heavy_check_mark:.
 
 <details>
 <summary>
@@ -394,15 +458,15 @@ The `ProductFetcher.Infrastructure.Services` namespace contains 1 named types.
 <br>
 
 - The `HttpRossmannProductsService` contains 3 members.
-- 27 total lines of source code.
-- Approximately 9 lines of executable code.
-- The highest cyclomatic complexity is 6 :heavy_check_mark:.
+- 25 total lines of source code.
+- Approximately 7 lines of executable code.
+- The highest cyclomatic complexity is 7 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Services/HttpRossmannProductsService.cs#L12' title='IProductsApi HttpRossmannProductsService._productsApi'>12</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
 | Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Services/HttpRossmannProductsService.cs#L14' title='HttpRossmannProductsService.HttpRossmannProductsService(IProductsApi productsApi)'>14</a> | 96 | 1 :heavy_check_mark: | 0 | 1 | 4 / 1 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Services/HttpRossmannProductsService.cs#L19' title='IAsyncEnumerable<RossmannProductDto> HttpRossmannProductsService.GetProductsInPromotion()'>19</a> | 66 | 6 :heavy_check_mark: | 0 | 9 | 17 / 8 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Services/HttpRossmannProductsService.cs#L19' title='IAsyncEnumerable<RossmannProductDto> HttpRossmannProductsService.GetProductsInPromotion()'>19</a> | 68 | 7 :heavy_check_mark: | 0 | 8 | 15 / 6 |
 
 <a href="#HttpRossmannProductsService-class-diagram">:link: to `HttpRossmannProductsService` class diagram</a>
 
@@ -425,13 +489,16 @@ The `ProductFetcher.Infrastructure.Services` namespace contains 1 named types.
 
 ## Mermaid class diagrams
 
-<div id="Class1-class-diagram"></div>
+<div id="LoggingFilter-class-diagram"></div>
 
-##### `Class1` class diagram
+##### `LoggingFilter` class diagram
 
 ```mermaid
 classDiagram
-class Class1{
+class LoggingFilter{
+    -ILogger _logger
+    +.ctor(ILogger<LoggingFilter> logger) LoggingFilter
+    +OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next) ValueTask<int>
 }
 
 ```
@@ -456,7 +523,7 @@ class RossmannProductDto{
     +string? LoyaltyPricePerUnit
     +string? DANNumber
     +string? AGroupNrOld
-    +string? Vat
+    +int Vat
     +int Height
     +int Width
     +double Depth
@@ -499,7 +566,21 @@ class FetchRossmannProductsUseCase{
 ```mermaid
 classDiagram
 class IProductsApi{
-    +GetProducts(int page)* Task<RossmannApiResponse<List<ApiProductDto>>>
+    +GetProducts(int page)* Task<RossmannApiResponse<ApiProductData>>
+}
+
+```
+
+<div id="ApiProductData-class-diagram"></div>
+
+##### `ApiProductData` class diagram
+
+```mermaid
+classDiagram
+class ApiProductData{
+    +List<ApiProductDto>? Products
+    +int TotalPages
+    +int TotalCount
 }
 
 ```
@@ -524,7 +605,7 @@ class ApiProductDto{
     +string? LoyaltyPricePerUnit
     +string? DANNumber
     +string? AGroupNrOld
-    +string? Vat
+    +int Vat
     +int Height
     +int Width
     +double Depth
@@ -546,13 +627,14 @@ class RossmannApiResponse<T>{
 
 ```
 
-<div id="Class1-class-diagram"></div>
+<div id="IocExtensions-class-diagram"></div>
 
-##### `Class1` class diagram
+##### `IocExtensions` class diagram
 
 ```mermaid
 classDiagram
-class Class1{
+class IocExtensions{
+    +AddInfrastructure(IServiceCollection services, IConfiguration configuration)$ IServiceCollection
 }
 
 ```
