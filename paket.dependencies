@@ -12,3 +12,5 @@ nuget AspNetCore.HealthChecks.Uris
 nuget Refit
 nuget Refit.HttpClientFactory
 nuget Mapster
+nuget Cocona
+nuget Microsoft.Extensions.Configuration
