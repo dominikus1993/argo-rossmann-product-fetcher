@@ -1,0 +1,7 @@
+LanguageExt.Core
+NodaTime
+Microsoft.Extensions.Http
+Microsoft.Extensions.Http.Polly
+AspNetCore.HealthChecks.Uris
+Refit
+Refit.HttpClientFactory

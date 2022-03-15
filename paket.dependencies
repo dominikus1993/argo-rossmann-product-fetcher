@@ -4,3 +4,10 @@ storage: none
 framework: net6.0
 
 nuget System.Linq.Async
+nuget LanguageExt.Core
+nuget NodaTime
+nuget Microsoft.Extensions.Http
+nuget Microsoft.Extensions.Http.Polly
+nuget AspNetCore.HealthChecks.Uris
+nuget Refit
+nuget Refit.HttpClientFactory
