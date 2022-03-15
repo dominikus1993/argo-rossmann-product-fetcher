@@ -40,13 +40,11 @@ internal class FileProductsReader : IProductsReader
         _jsonOptions = jsonOptions;
     }
 
-
     public async IAsyncEnumerable<RossmannProductDto> ReadProducts([EnumeratorCancellation]CancellationToken cancellationToken = default)
     {
         var path = System.IO.Path.Combine(_config.Path, _config.FileName);
         await using var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read);
-        var products = JsonSerializer.DeserializeAsyncEnumerable<RossmannProductDto>(stream, _jsonOptions);
-        await foreach (var p in products)
+        await foreach (var p in JsonSerializer.DeserializeAsyncEnumerable<RossmannProductDto>(stream, _jsonOptions, cancellationToken))
         {
             if (p is null)
             {
