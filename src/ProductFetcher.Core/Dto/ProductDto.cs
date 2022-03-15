@@ -15,7 +15,7 @@ public class RossmannProductDto
     public string? LoyaltyPricePerUnit { get; set; }
     public string? DANNumber { get; set; }
     public string? AGroupNrOld { get; set; }
-    public string? Vat { get; set; }
+    public int Vat { get; set; }
     public int Height { get; set; }
     public int Width { get; set; }
     public double Depth { get; set; }

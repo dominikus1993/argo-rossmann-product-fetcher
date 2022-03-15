@@ -5,6 +5,13 @@ internal class RossmannApiResponse<T>
     public T? Data { get; set; }
 }
 
+internal class ApiProductData
+{
+    public List<ApiProductDto>? Products { get; set; }
+    public int TotalPages { get; set; }
+    public int TotalCount { get; set; }
+}
+
 internal class ApiProductDto
 {
     public int Id { get; set; }
@@ -20,7 +27,7 @@ internal class ApiProductDto
     public string? LoyaltyPricePerUnit { get; set; }
     public string? DANNumber { get; set; }
     public string? AGroupNrOld { get; set; }
-    public string? Vat { get; set; }
+    public int Vat { get; set; }
     public int Height { get; set; }
     public int Width { get; set; }
     public double Depth { get; set; }

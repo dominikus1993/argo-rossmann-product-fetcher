@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,7 +16,16 @@ public static class IocExtensions
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
         IConfiguration configuration)
     {
-        services.AddRefitClient<IProductsApi>().ConfigureHttpClient(client =>
+        var options = new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+        };
+        var settings = new RefitSettings()
+        {
+            ContentSerializer = new SystemTextJsonContentSerializer(options)
+        };
+        services.AddRefitClient<IProductsApi>(settings).ConfigureHttpClient(client =>
             {
                 client.BaseAddress = new Uri(configuration.GetConnectionString("ProductsApi"));
                 client.DefaultRequestHeaders.Add("Accept", "application/json");
