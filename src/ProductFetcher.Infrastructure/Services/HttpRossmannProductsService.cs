@@ -16,7 +16,7 @@ internal class HttpRossmannProductsService : IRossmannProductsService
         _productsApi = productsApi;
     }
 
-    public async IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion()
+    public async IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion(CancellationToken cancellationToken = default)
     {
         for (int page = 1; page < 3; page++)
         {

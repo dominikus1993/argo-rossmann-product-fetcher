@@ -4,5 +4,5 @@ namespace ProductFetcher.Core.Services;
 
 public interface IRossmannProductsService
 {
-    IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion();
+    IAsyncEnumerable<RossmannProductDto> GetProductsInPromotion(CancellationToken cancellationToken = default);
 }
