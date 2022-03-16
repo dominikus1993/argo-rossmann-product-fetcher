@@ -38,4 +38,19 @@ public static class IocExtensions
         services.AddTransient<IProductsWriter, FileProductsWriter>();
         return services;
     }
+
+        public static IServiceCollection AddNotifierInfrastructure(this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        var options = new JsonSerializerOptions()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+        };
+        services.AddSingleton<JsonSerializerOptions>(options);
+        services.AddSingleton(new FileProductsReaderConfig(configuration["Source:Path"], configuration["Source:FileName"]));
+        services.AddTransient<IProductsReader, FileProductsReader>();
+        services.AddTransient<IPromotionNotifier, ConsolePromotionNotifier>();
+        return services;
+    }
 }

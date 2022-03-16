@@ -17,7 +17,7 @@ public sealed class FetchRossmannProductsUseCase
 
     public async Task Execute(CancellationToken cancellationToken = default)
     {
-        var result = await _productsService.GetProductsInPromotion().ToListAsync();
-        await _productsWriter.WriteProducts(result);
+        var result = await _productsService.GetProductsInPromotion(cancellationToken).ToListAsync(cancellationToken: cancellationToken);
+        await _productsWriter.WriteProducts(result, cancellationToken);
     }
 }

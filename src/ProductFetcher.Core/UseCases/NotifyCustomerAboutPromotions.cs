@@ -6,18 +6,17 @@ namespace ProductFetcher.Core.UseCases;
 
 public sealed class NotifyCustomerAboutPromotionsUseCase
 {
-    private readonly IRossmannProductsService _productsService;
-    private readonly IProductsWriter _productsWriter;
+    private readonly  IPromotionNotifier _notifier;
+    private readonly IProductsReader _productsReader;
 
-    public NotifyCustomerAboutPromotionsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)
+    public NotifyCustomerAboutPromotionsUseCase(IPromotionNotifier notifier, IProductsReader productsReader)
     {
-        _productsService = productsService;
-        _productsWriter = productsWriter;
+        _notifier = notifier;
+        _productsReader = productsReader;
     }
-
     public async Task Execute(CancellationToken cancellationToken = default)
     {
-        var result = await _productsService.GetProductsInPromotion().ToListAsync();
-        await _productsWriter.WriteProducts(result);
+        var products = await _productsReader.ReadProducts(cancellationToken).ToListAsync(cancellationToken: cancellationToken); ;
+        await _notifier.Notify(products, cancellationToken);
     }
 }
