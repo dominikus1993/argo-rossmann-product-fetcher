@@ -5,7 +5,6 @@ using ProductFetcher.Infrastructure.Repositories;
 using System.Text.Json;
 using System.Linq;
 
-
 namespace ProductFetcher.Infrastructure.Tests.Repositories;
 
 public class FileProductsReaderTests
