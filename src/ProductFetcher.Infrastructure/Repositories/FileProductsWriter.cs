@@ -5,6 +5,7 @@ using System.Text.Json;
 using ProductFetcher.Core.Dto;
 using ProductFetcher.Core.Repositories;
 
+[assembly: InternalsVisibleTo("ProductFetcher.Infrastructure.Tests")]
 namespace ProductFetcher.Infrastructure.Repositories;
 
 internal record FileProductsWriterConfig(string Path, string FileName);
@@ -24,7 +25,7 @@ internal class FileProductsWriter : IProductsWriter
     {
         var json = JsonSerializer.Serialize(products, _jsonOptions);
         var path = System.IO.Path.Combine(_config.Path, _config.FileName);
-        await System.IO.File.WriteAllTextAsync(path, json);
+        await File.WriteAllTextAsync(path, json, cancellationToken);
     }
 }
 
@@ -42,7 +43,7 @@ internal class FileProductsReader : IProductsReader
 
     public async IAsyncEnumerable<RossmannProductDto> ReadProducts([EnumeratorCancellation]CancellationToken cancellationToken = default)
     {
-        var path = System.IO.Path.Combine(_config.Path, _config.FileName);
+        var path = Path.Combine(_config.Path, _config.FileName);
         await using var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read);
         await foreach (var p in JsonSerializer.DeserializeAsyncEnumerable<RossmannProductDto>(stream, _jsonOptions, cancellationToken))
         {
