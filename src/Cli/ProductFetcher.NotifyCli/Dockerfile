@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY . .
 RUN dotnet tool restore
-WORKDIR /src/src/Cli/ProductFetcher.FetchCli
+WORKDIR /src/src/Cli/ProductFetcher.NotifyCli
 RUN dotnet paket restore
 RUN dotnet restore -nowarn:msb3202,nu1503
 RUN dotnet build -c Release -o /app
