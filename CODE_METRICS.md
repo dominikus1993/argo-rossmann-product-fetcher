@@ -89,9 +89,9 @@ The `<global namespace>` namespace contains 2 named types.
 The *ProductFetcher.NotifyCli.csproj* project file contains:
 
 - 1 namespaces.
-- 1 named types.
-- 2 total lines of source code.
-- Approximately 2 lines of executable code.
+- 2 named types.
+- 82 total lines of source code.
+- Approximately 28 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
@@ -102,11 +102,11 @@ The *ProductFetcher.NotifyCli.csproj* project file contains:
 </summary>
 <br>
 
-The `<global namespace>` namespace contains 1 named types.
+The `<global namespace>` namespace contains 2 named types.
 
-- 1 named types.
-- 2 total lines of source code.
-- Approximately 2 lines of executable code.
+- 2 named types.
+- 82 total lines of source code.
+- Approximately 28 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
@@ -118,13 +118,38 @@ The `<global namespace>` namespace contains 1 named types.
 <br>
 
 - The `<Program>$` contains 1 members.
-- 2 total lines of source code.
-- Approximately 2 lines of executable code.
+- 56 total lines of source code.
+- Approximately 22 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.NotifyCli/Program.cs#L2' title='<top-level-statements-entry-point>'>2</a> | 100 | 1 :heavy_check_mark: | 0 | 1 | 2 / 1 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.NotifyCli/Program.cs#L1' title='<top-level-statements-entry-point>'>1</a> | 64 | 1 :heavy_check_mark: | 0 | 4 | 56 / 11 |
+
+<a href="#global+namespace">:top: back to &lt;global namespace&gt;</a>
+
+</details>
+
+<details>
+<summary>
+  <strong id="loggingfilter">
+    LoggingFilter :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `LoggingFilter` contains 3 members.
+- 26 total lines of source code.
+- Approximately 6 lines of executable code.
+- The highest cyclomatic complexity is 1 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.NotifyCli/Program.cs#L33' title='ILogger LoggingFilter._logger'>33</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.NotifyCli/Program.cs#L35' title='LoggingFilter.LoggingFilter(ILogger<LoggingFilter> logger)'>35</a> | 96 | 1 :heavy_check_mark: | 0 | 2 | 4 / 1 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.NotifyCli/Program.cs#L39' title='ValueTask<int> LoggingFilter.OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next)'>39</a> | 73 | 1 :heavy_check_mark: | 0 | 6 | 17 / 5 |
+
+<a href="#LoggingFilter-class-diagram">:link: to `LoggingFilter` class diagram</a>
 
 <a href="#global+namespace">:top: back to &lt;global namespace&gt;</a>
 
@@ -141,9 +166,9 @@ The `<global namespace>` namespace contains 1 named types.
 The *ProductFetcher.Core.csproj* project file contains:
 
 - 4 namespaces.
-- 6 named types.
-- 80 total lines of source code.
-- Approximately 16 lines of executable code.
+- 7 named types.
+- 85 total lines of source code.
+- Approximately 18 lines of executable code.
 - The highest cyclomatic complexity is 2 :heavy_check_mark:.
 
 <details>
@@ -275,12 +300,35 @@ The `ProductFetcher.Core.Repositories` namespace contains 2 named types.
 </summary>
 <br>
 
-The `ProductFetcher.Core.Services` namespace contains 1 named types.
+The `ProductFetcher.Core.Services` namespace contains 2 named types.
 
-- 1 named types.
-- 6 total lines of source code.
+- 2 named types.
+- 12 total lines of source code.
+- Approximately 4 lines of executable code.
+- The highest cyclomatic complexity is 1 :heavy_check_mark:.
+
+<details>
+<summary>
+  <strong id="ipromotionnotifier">
+    IPromotionNotifier :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `IPromotionNotifier` contains 1 members.
+- 4 total lines of source code.
 - Approximately 2 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/Services/Notifier.cs#L7' title='ValueTask IPromotionNotifier.Notify(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null)'>7</a> | 87 | 1 :heavy_check_mark: | 0 | 4 | 1 / 2 |
+
+<a href="#IPromotionNotifier-class-diagram">:link: to `IPromotionNotifier` class diagram</a>
+
+<a href="#productfetcher-core-services">:top: back to ProductFetcher.Core.Services</a>
+
+</details>
 
 <details>
 <summary>
@@ -318,7 +366,7 @@ The `ProductFetcher.Core.Services` namespace contains 1 named types.
 The `ProductFetcher.Core.UseCases` namespace contains 2 named types.
 
 - 2 named types.
-- 38 total lines of source code.
+- 37 total lines of source code.
 - Approximately 10 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
@@ -340,7 +388,7 @@ The `ProductFetcher.Core.UseCases` namespace contains 2 named types.
 | Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/FetchProductsUseCase.cs#L9' title='IRossmannProductsService FetchRossmannProductsUseCase._productsService'>9</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
 | Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/FetchProductsUseCase.cs#L10' title='IProductsWriter FetchRossmannProductsUseCase._productsWriter'>10</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
 | Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/FetchProductsUseCase.cs#L12' title='FetchRossmannProductsUseCase.FetchRossmannProductsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)'>12</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/FetchProductsUseCase.cs#L18' title='Task FetchRossmannProductsUseCase.Execute(CancellationToken cancellationToken = null)'>18</a> | 77 | 1 :heavy_check_mark: | 0 | 7 | 5 / 3 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/FetchProductsUseCase.cs#L18' title='Task FetchRossmannProductsUseCase.Execute(CancellationToken cancellationToken = null)'>18</a> | 76 | 1 :heavy_check_mark: | 0 | 7 | 5 / 3 |
 
 <a href="#FetchRossmannProductsUseCase-class-diagram">:link: to `FetchRossmannProductsUseCase` class diagram</a>
 
@@ -357,16 +405,16 @@ The `ProductFetcher.Core.UseCases` namespace contains 2 named types.
 <br>
 
 - The `NotifyCustomerAboutPromotionsUseCase` contains 4 members.
-- 17 total lines of source code.
+- 16 total lines of source code.
 - Approximately 5 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L9' title='IRossmannProductsService NotifyCustomerAboutPromotionsUseCase._productsService'>9</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L10' title='IProductsWriter NotifyCustomerAboutPromotionsUseCase._productsWriter'>10</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L12' title='NotifyCustomerAboutPromotionsUseCase.NotifyCustomerAboutPromotionsUseCase(IRossmannProductsService productsService, IProductsWriter productsWriter)'>12</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L18' title='Task NotifyCustomerAboutPromotionsUseCase.Execute(CancellationToken cancellationToken = null)'>18</a> | 77 | 1 :heavy_check_mark: | 0 | 7 | 5 / 3 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L9' title='IPromotionNotifier NotifyCustomerAboutPromotionsUseCase._notifier'>9</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L10' title='IProductsReader NotifyCustomerAboutPromotionsUseCase._productsReader'>10</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L12' title='NotifyCustomerAboutPromotionsUseCase.NotifyCustomerAboutPromotionsUseCase(IPromotionNotifier notifier, IProductsReader productsReader)'>12</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Core/UseCases/NotifyCustomerAboutPromotions.cs#L17' title='Task NotifyCustomerAboutPromotionsUseCase.Execute(CancellationToken cancellationToken = null)'>17</a> | 76 | 1 :heavy_check_mark: | 0 | 8 | 5 / 3 |
 
 <a href="#NotifyCustomerAboutPromotionsUseCase-class-diagram">:link: to `NotifyCustomerAboutPromotionsUseCase` class diagram</a>
 
@@ -385,9 +433,9 @@ The `ProductFetcher.Core.UseCases` namespace contains 2 named types.
 The *ProductFetcher.Infrastructure.csproj* project file contains:
 
 - 5 namespaces.
-- 10 named types.
-- 147 total lines of source code.
-- Approximately 35 lines of executable code.
+- 11 named types.
+- 175 total lines of source code.
+- Approximately 45 lines of executable code.
 - The highest cyclomatic complexity is 7 :heavy_check_mark:.
 
 <details>
@@ -547,8 +595,8 @@ The `ProductFetcher.Infrastructure.Dto` namespace contains 3 named types.
 The `ProductFetcher.Infrastructure.Extensions` namespace contains 1 named types.
 
 - 1 named types.
-- 28 total lines of source code.
-- Approximately 10 lines of executable code.
+- 43 total lines of source code.
+- Approximately 16 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
@@ -559,14 +607,15 @@ The `ProductFetcher.Infrastructure.Extensions` namespace contains 1 named types.
 </summary>
 <br>
 
-- The `IocExtensions` contains 1 members.
-- 26 total lines of source code.
-- Approximately 10 lines of executable code.
+- The `IocExtensions` contains 2 members.
+- 41 total lines of source code.
+- Approximately 16 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Extensions/IocExtensions.cs#L18' title='IServiceCollection IocExtensions.AddInfrastructure(IServiceCollection services, IConfiguration configuration)'>18</a> | 64 | 1 :heavy_check_mark: | 0 | 8 | 23 / 10 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Extensions/IocExtensions.cs#L42' title='IServiceCollection IocExtensions.AddNotifierInfrastructure(IServiceCollection services, IConfiguration configuration)'>42</a> | 72 | 1 :heavy_check_mark: | 0 | 5 | 14 / 6 |
 
 <a href="#IocExtensions-class-diagram">:link: to `IocExtensions` class diagram</a>
 
@@ -587,7 +636,7 @@ The `ProductFetcher.Infrastructure.Extensions` namespace contains 1 named types.
 The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named types.
 
 - 4 named types.
-- 49 total lines of source code.
+- 48 total lines of source code.
 - Approximately 15 lines of executable code.
 - The highest cyclomatic complexity is 3 :heavy_check_mark:.
 
@@ -606,10 +655,10 @@ The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named type
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L35' title='FileProductsReaderConfig FileProductsReader._config'>35</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L36' title='JsonSerializerOptions FileProductsReader._jsonOptions'>36</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L37' title='FileProductsReader.FileProductsReader(FileProductsReaderConfig config, JsonSerializerOptions jsonOptions)'>37</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L43' title='IAsyncEnumerable<RossmannProductDto> FileProductsReader.ReadProducts(CancellationToken cancellationToken = null)'>43</a> | 67 | 3 :heavy_check_mark: | 0 | 9 | 13 / 7 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L36' title='FileProductsReaderConfig FileProductsReader._config'>36</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L37' title='JsonSerializerOptions FileProductsReader._jsonOptions'>37</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L38' title='FileProductsReader.FileProductsReader(FileProductsReaderConfig config, JsonSerializerOptions jsonOptions)'>38</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L44' title='IAsyncEnumerable<RossmannProductDto> FileProductsReader.ReadProducts(CancellationToken cancellationToken = null)'>44</a> | 67 | 3 :heavy_check_mark: | 0 | 9 | 13 / 7 |
 
 <a href="#FileProductsReader-class-diagram">:link: to `FileProductsReader` class diagram</a>
 
@@ -632,9 +681,9 @@ The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named type
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L31' title='FileProductsReaderConfig.FileProductsReaderConfig(string Path, string FileName)'>31</a> | 100 | 1 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L31' title='string FileProductsReaderConfig.FileName'>31</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L31' title='string FileProductsReaderConfig.Path'>31</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L32' title='FileProductsReaderConfig.FileProductsReaderConfig(string Path, string FileName)'>32</a> | 100 | 1 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L32' title='string FileProductsReaderConfig.FileName'>32</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L32' title='string FileProductsReaderConfig.Path'>32</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 
 <a href="#FileProductsReaderConfig-class-diagram">:link: to `FileProductsReaderConfig` class diagram</a>
 
@@ -657,10 +706,10 @@ The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named type
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L14' title='FileProductsWriterConfig FileProductsWriter._config'>14</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L15' title='JsonSerializerOptions FileProductsWriter._jsonOptions'>15</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L17' title='FileProductsWriter.FileProductsWriter(FileProductsWriterConfig config, JsonSerializerOptions jsonOptions)'>17</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L23' title='Task FileProductsWriter.WriteProducts(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null)'>23</a> | 73 | 1 :heavy_check_mark: | 0 | 7 | 6 / 4 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L15' title='FileProductsWriterConfig FileProductsWriter._config'>15</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L16' title='JsonSerializerOptions FileProductsWriter._jsonOptions'>16</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L18' title='FileProductsWriter.FileProductsWriter(FileProductsWriterConfig config, JsonSerializerOptions jsonOptions)'>18</a> | 85 | 1 :heavy_check_mark: | 0 | 2 | 5 / 2 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L24' title='Task FileProductsWriter.WriteProducts(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null)'>24</a> | 72 | 1 :heavy_check_mark: | 0 | 7 | 6 / 4 |
 
 <a href="#FileProductsWriter-class-diagram">:link: to `FileProductsWriter` class diagram</a>
 
@@ -683,9 +732,9 @@ The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named type
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L10' title='FileProductsWriterConfig.FileProductsWriterConfig(string Path, string FileName)'>10</a> | 100 | 1 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L10' title='string FileProductsWriterConfig.FileName'>10</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
-| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L10' title='string FileProductsWriterConfig.Path'>10</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L11' title='FileProductsWriterConfig.FileProductsWriterConfig(string Path, string FileName)'>11</a> | 100 | 1 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L11' title='string FileProductsWriterConfig.FileName'>11</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
+| Property | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Repositories/FileProductsWriter.cs#L11' title='string FileProductsWriterConfig.Path'>11</a> | 100 | 0 :heavy_check_mark: | 0 | 0 | 1 / 0 |
 
 <a href="#FileProductsWriterConfig-class-diagram">:link: to `FileProductsWriterConfig` class diagram</a>
 
@@ -703,12 +752,35 @@ The `ProductFetcher.Infrastructure.Repositories` namespace contains 4 named type
 </summary>
 <br>
 
-The `ProductFetcher.Infrastructure.Services` namespace contains 1 named types.
+The `ProductFetcher.Infrastructure.Services` namespace contains 2 named types.
 
-- 1 named types.
-- 27 total lines of source code.
-- Approximately 8 lines of executable code.
+- 2 named types.
+- 41 total lines of source code.
+- Approximately 12 lines of executable code.
 - The highest cyclomatic complexity is 7 :heavy_check_mark:.
+
+<details>
+<summary>
+  <strong id="consolepromotionnotifier">
+    ConsolePromotionNotifier :heavy_check_mark:
+  </strong>
+</summary>
+<br>
+
+- The `ConsolePromotionNotifier` contains 1 members.
+- 12 total lines of source code.
+- Approximately 4 lines of executable code.
+- The highest cyclomatic complexity is 2 :heavy_check_mark:.
+
+| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/ProductFetcher.Infrastructure/Services/Notifier.cs#L10' title='ValueTask ConsolePromotionNotifier.Notify(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null)'>10</a> | 78 | 2 :heavy_check_mark: | 0 | 7 | 9 / 4 |
+
+<a href="#ConsolePromotionNotifier-class-diagram">:link: to `ConsolePromotionNotifier` class diagram</a>
+
+<a href="#productfetcher-infrastructure-services">:top: back to ProductFetcher.Infrastructure.Services</a>
+
+</details>
 
 <details>
 <summary>
@@ -745,10 +817,10 @@ The `ProductFetcher.Infrastructure.Services` namespace contains 1 named types.
 
 The *ProductFetcher.Infrastructure.Tests.csproj* project file contains:
 
-- 2 namespaces.
-- 2 named types.
-- 20 total lines of source code.
-- Approximately 0 lines of executable code.
+- 1 namespaces.
+- 1 named types.
+- 18 total lines of source code.
+- Approximately 4 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
@@ -762,8 +834,8 @@ The *ProductFetcher.Infrastructure.Tests.csproj* project file contains:
 The `ProductFetcher.Infrastructure.Tests.Repositories` namespace contains 1 named types.
 
 - 1 named types.
-- 10 total lines of source code.
-- Approximately 0 lines of executable code.
+- 18 total lines of source code.
+- Approximately 4 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 <details>
@@ -775,57 +847,17 @@ The `ProductFetcher.Infrastructure.Tests.Repositories` namespace contains 1 name
 <br>
 
 - The `FileProductsReaderTests` contains 1 members.
-- 8 total lines of source code.
-- Approximately 0 lines of executable code.
+- 16 total lines of source code.
+- Approximately 4 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/tests/ProductFetcher.Infrastructure.Tests/Repositories/FileProductsReaderTests.cs#L10' title='Task FileProductsReaderTests.TestReadingFile()'>10</a> | 100 | 1 :heavy_check_mark: | 0 | 2 | 5 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/tests/ProductFetcher.Infrastructure.Tests/Repositories/FileProductsReaderTests.cs#L13' title='Task FileProductsReaderTests.TestReadingFile()'>13</a> | 76 | 1 :heavy_check_mark: | 0 | 6 | 13 / 4 |
 
 <a href="#FileProductsReaderTests-class-diagram">:link: to `FileProductsReaderTests` class diagram</a>
 
 <a href="#productfetcher-infrastructure-tests-repositories">:top: back to ProductFetcher.Infrastructure.Tests.Repositories</a>
-
-</details>
-
-</details>
-
-<details>
-<summary>
-  <strong id="productfetcher-infrastructure-tests">
-    ProductFetcher.Infrastructure.Tests :heavy_check_mark:
-  </strong>
-</summary>
-<br>
-
-The `ProductFetcher.Infrastructure.Tests` namespace contains 1 named types.
-
-- 1 named types.
-- 10 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 1 :heavy_check_mark:.
-
-<details>
-<summary>
-  <strong id="unittest1">
-    UnitTest1 :heavy_check_mark:
-  </strong>
-</summary>
-<br>
-
-- The `UnitTest1` contains 1 members.
-- 8 total lines of source code.
-- Approximately 0 lines of executable code.
-- The highest cyclomatic complexity is 1 :heavy_check_mark:.
-
-| Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/tests/ProductFetcher.Infrastructure.Tests/UnitTest1.cs#L8' title='void UnitTest1.Test1()'>8</a> | 100 | 1 :heavy_check_mark: | 0 | 1 | 5 / 0 |
-
-<a href="#UnitTest1-class-diagram">:link: to `UnitTest1` class diagram</a>
-
-<a href="#productfetcher-infrastructure-tests">:top: back to ProductFetcher.Infrastructure.Tests</a>
 
 </details>
 
@@ -843,6 +875,20 @@ The `ProductFetcher.Infrastructure.Tests` namespace contains 1 named types.
   - **Lines of executable code**: Approximates the lines of executable code. Lower values are better.
 
 ## Mermaid class diagrams
+
+<div id="LoggingFilter-class-diagram"></div>
+
+##### `LoggingFilter` class diagram
+
+```mermaid
+classDiagram
+class LoggingFilter{
+    -ILogger _logger
+    +.ctor(ILogger<LoggingFilter> logger) LoggingFilter
+    +OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next) ValueTask<int>
+}
+
+```
 
 <div id="LoggingFilter-class-diagram"></div>
 
@@ -912,6 +958,18 @@ class IProductsWriter{
 
 ```
 
+<div id="IPromotionNotifier-class-diagram"></div>
+
+##### `IPromotionNotifier` class diagram
+
+```mermaid
+classDiagram
+class IPromotionNotifier{
+    +Notify(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null)* ValueTask
+}
+
+```
+
 <div id="IRossmannProductsService-class-diagram"></div>
 
 ##### `IRossmannProductsService` class diagram
@@ -946,9 +1004,9 @@ class FetchRossmannProductsUseCase{
 ```mermaid
 classDiagram
 class NotifyCustomerAboutPromotionsUseCase{
-    -IRossmannProductsService _productsService
-    -IProductsWriter _productsWriter
-    +.ctor(IRossmannProductsService productsService, IProductsWriter productsWriter) NotifyCustomerAboutPromotionsUseCase
+    -IPromotionNotifier _notifier
+    -IProductsReader _productsReader
+    +.ctor(IPromotionNotifier notifier, IProductsReader productsReader) NotifyCustomerAboutPromotionsUseCase
     +Execute(CancellationToken cancellationToken = null) Task
 }
 
@@ -1030,6 +1088,7 @@ class RossmannApiResponse<T>{
 classDiagram
 class IocExtensions{
     +AddInfrastructure(IServiceCollection services, IConfiguration configuration)$ IServiceCollection
+    +AddNotifierInfrastructure(IServiceCollection services, IConfiguration configuration)$ IServiceCollection
 }
 
 ```
@@ -1094,6 +1153,18 @@ class FileProductsWriterConfig{
 
 ```
 
+<div id="ConsolePromotionNotifier-class-diagram"></div>
+
+##### `ConsolePromotionNotifier` class diagram
+
+```mermaid
+classDiagram
+class ConsolePromotionNotifier{
+    +Notify(IEnumerable<RossmannProductDto> products, CancellationToken cancellationToken = null) ValueTask
+}
+
+```
+
 <div id="HttpRossmannProductsService-class-diagram"></div>
 
 ##### `HttpRossmannProductsService` class diagram
@@ -1116,18 +1187,6 @@ class HttpRossmannProductsService{
 classDiagram
 class FileProductsReaderTests{
     +TestReadingFile() Task
-}
-
-```
-
-<div id="UnitTest1-class-diagram"></div>
-
-##### `UnitTest1` class diagram
-
-```mermaid
-classDiagram
-class UnitTest1{
-    +Test1() void
 }
 
 ```
