@@ -1,26 +1,31 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: artifact-passing-
+  generateName: argo-product-fetch
 spec:
-  entrypoint: artifact-example
+  entrypoint: argo-product-fetch
   templates:
-  - name: artifact-example
+  - name: argo-product-fetch
     steps:
     - - name: generate-artifact
         template: fetch
     - - name: consume-artifact
-        template: print-message
+        template: notify
         arguments:
           artifacts:
-          - name: message
+          - name: products
             from: "{{steps.generate-artifact.outputs.artifacts.products}}"
 
   - name: fetch
     container:
-      image: docker/whalesay:latest
-      command: []
-      args: []
+      image: ghcr.io/dominikus1993/argo-rossmann-product-fetcher-fetch-cli:main
+      command: ["dotnet"]
+      args: ["ProductFetcher.FetchCli.dll"]
+      env: 
+        - name: WriteSink__Path
+          value: /tmp
+        - name: WriteSink__Filename
+          value: products.json
     outputs:
       artifacts:
       # generate hello-art artifact from /tmp/hello_world.txt
@@ -28,14 +33,14 @@ spec:
       - name: products
         path: /tmp/products.json
 
-  - name: print-message
+  - name: notify
     inputs:
       artifacts:
       # unpack the message input artifact
       # and put it at /tmp/message
-      - name: message
-        path: /tmp/message
+      - name: products
+        path: /tmp/products.json
     container:
       image: alpine:latest
       command: [sh, -c]
-      args: ["cat /tmp/message"]
+      args: ["cat /tmp/products.json"]

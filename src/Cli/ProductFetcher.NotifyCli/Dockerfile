@@ -17,4 +17,4 @@ FROM base as final
 WORKDIR /app
 COPY --from=publish /app .
 
-ENTRYPOINT ["dotnet", "Sample.Cli.dll"]
+ENTRYPOINT ["dotnet", "ProductFetcher.NotifyCli.dll"]
