@@ -39,7 +39,7 @@ class LoggingFilter : CommandFilterAttribute
         _logger.LogInformation("Before: {Name}", ctx.Command.Name);
         try
         {
-            return await next(ctx);
+            return await next(ctx).ConfigureAwait(false);
         }
         catch (Exception ex)
         {
