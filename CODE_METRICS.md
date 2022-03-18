@@ -13,7 +13,7 @@ The *ProductFetcher.FetchCli.csproj* project file contains:
 
 - 1 namespaces.
 - 2 named types.
-- 82 total lines of source code.
+- 80 total lines of source code.
 - Approximately 28 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
@@ -28,7 +28,7 @@ The *ProductFetcher.FetchCli.csproj* project file contains:
 The `<global namespace>` namespace contains 2 named types.
 
 - 2 named types.
-- 82 total lines of source code.
+- 80 total lines of source code.
 - Approximately 28 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
@@ -41,13 +41,13 @@ The `<global namespace>` namespace contains 2 named types.
 <br>
 
 - The `<Program>$` contains 1 members.
-- 56 total lines of source code.
+- 54 total lines of source code.
 - Approximately 22 lines of executable code.
 - The highest cyclomatic complexity is 1 :heavy_check_mark:.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L1' title='<top-level-statements-entry-point>'>1</a> | 64 | 1 :heavy_check_mark: | 0 | 4 | 56 / 11 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L1' title='<top-level-statements-entry-point>'>1</a> | 63 | 1 :heavy_check_mark: | 0 | 5 | 54 / 11 |
 
 <a href="#global+namespace">:top: back to &lt;global namespace&gt;</a>
 
@@ -68,9 +68,9 @@ The `<global namespace>` namespace contains 2 named types.
 
 | Member kind | Line number | Maintainability index | Cyclomatic complexity | Depth of inheritance | Class coupling | Lines of source / executable code |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L33' title='ILogger LoggingFilter._logger'>33</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L35' title='LoggingFilter.LoggingFilter(ILogger<LoggingFilter> logger)'>35</a> | 96 | 1 :heavy_check_mark: | 0 | 2 | 4 / 1 |
-| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L39' title='ValueTask<int> LoggingFilter.OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next)'>39</a> | 73 | 1 :heavy_check_mark: | 0 | 6 | 17 / 5 |
+| Field | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L31' title='ILogger LoggingFilter._logger'>31</a> | 100 | 0 :heavy_check_mark: | 0 | 1 | 1 / 0 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L33' title='LoggingFilter.LoggingFilter(ILogger<LoggingFilter> logger)'>33</a> | 96 | 1 :heavy_check_mark: | 0 | 2 | 4 / 1 |
+| Method | <a href='https://github.com/dominikus1993/argo-rossmann-product-fetcher/blob/main/src/Cli/ProductFetcher.FetchCli/Program.cs#L37' title='ValueTask<int> LoggingFilter.OnCommandExecutionAsync(CoconaCommandExecutingContext ctx, CommandExecutionDelegate next)'>37</a> | 72 | 1 :heavy_check_mark: | 0 | 6 | 17 / 5 |
 
 <a href="#LoggingFilter-class-diagram">:link: to `LoggingFilter` class diagram</a>
 
