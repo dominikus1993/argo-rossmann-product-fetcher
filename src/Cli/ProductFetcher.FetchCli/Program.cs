@@ -22,9 +22,7 @@ builder.Configuration.AddJsonFile("appsettings.custom.json", optional: true);
 var app = builder.Build();
 
 app.UseFilter(new LoggingFilter(app.Services.GetRequiredService<ILogger<LoggingFilter>>()));
-app.AddCommand(async (FetchRossmannProductsUseCase useCase) => {
-     await useCase.Execute().ConfigureAwait(false);
-});
+app.AddCommand(async (FetchRossmannProductsUseCase useCase, CoconaAppContext ctx) => await useCase.Execute(ctx.CancellationToken).ConfigureAwait(false));
 
 await app.RunAsync().ConfigureAwait(false);
 
