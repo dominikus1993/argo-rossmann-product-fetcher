@@ -23,24 +23,32 @@ spec:
       args: ["ProductFetcher.FetchCli.dll"]
       env: 
         - name: WriteSink__Path
-          value: /tmp
+          value: /mnt/out
         - name: WriteSink__Filename
           value: products.json
+      volumeMounts:
+        - name: out
+          mountPath: /mnt/out
+    volumes:
+      - name: out
+        emptyDir: { }
     outputs:
       artifacts:
-      # generate hello-art artifact from /tmp/hello_world.txt
-      # artifacts can be directories as well as files
       - name: products
-        path: /tmp/products.json
+        path: /mnt/out/products.json
 
   - name: notify
     inputs:
       artifacts:
-      # unpack the message input artifact
-      # and put it at /tmp/message
       - name: products
-        path: /tmp/products.json
+        path: /mnt/out/products.json
     container:
       image: alpine:latest
       command: [sh, -c]
-      args: ["cat /tmp/products.json"]
+      args: ["cat /mnt/out/products.json"]
+      volumeMounts:
+        - name: out
+          mountPath: /mnt/out
+    volumes:
+      - name: out
+        emptyDir: { }
